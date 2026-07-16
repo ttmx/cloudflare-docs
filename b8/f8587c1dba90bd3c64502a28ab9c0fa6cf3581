@@ -1,0 +1,119 @@
+.github/workflows/publish-production.yml
+  s_36a11364f6c860::t_739b5452e29322 6-18,22,94-216
+.github/workflows/seed-astro-cache.yml
+  s_36a11364f6c860::t_d7c9669313c674 1-33
+.gitignore
+  s_36a11364f6c860::t_df694f8be654d1 14-16
+AI_SEARCH_LOCAL_DEVELOPMENT.md
+  s_36a11364f6c860::t_6ba6ec9a6eda2d 1-206
+README.md
+  s_36a11364f6c860::t_e623f7f1a34aa5 7-11
+bin/ai-search-doc-events.ts
+  s_36a11364f6c860::t_1530097cca3131 1-3
+bin/ai-search-doc-events/args.ts
+  s_36a11364f6c860::t_9c4b6f411a0b65 1-102
+bin/ai-search-doc-events/bench-manifest.ts
+  s_36a11364f6c860::t_840730f3727e5f 1-196
+bin/ai-search-doc-events/content-processors/changelog-post.ts
+  s_36a11364f6c860::t_46ef2778706c46 1-70
+bin/ai-search-doc-events/content-processors/data.ts
+  s_36a11364f6c860::t_12821965382a78 1-47
+bin/ai-search-doc-events/content-processors/generated-landing.ts
+  s_36a11364f6c860::t_c7ff776b3729d4 1-180
+bin/ai-search-doc-events/content-processors/mdast.ts
+  s_36a11364f6c860::t_c7890891fed9e1 1-121
+bin/ai-search-doc-events/content-processors/model-page.ts
+  s_36a11364f6c860::t_b43c9220ad535a 1-166
+bin/ai-search-doc-events/content-processors/rendered-html.ts
+  s_36a11364f6c860::t_135ae8e01d2cd7 1-118
+bin/ai-search-doc-events/content-processors/ruleset-field.ts
+  s_36a11364f6c860::t_870629a3348c7a 1-44
+bin/ai-search-doc-events/content-processors/source-markdown.ts
+  s_36a11364f6c860::t_7ee3bd784949b2 1-14
+bin/ai-search-doc-events/content-processors/third-party-license.ts
+  s_36a11364f6c860::t_85536c0617db80 1-38
+bin/ai-search-doc-events/content-processors/utils.ts
+  s_36a11364f6c860::t_becf60bbfd6927 1,3-7,9-23,26-39,41-43
+bin/ai-search-doc-events/content-processors/video.ts
+  s_36a11364f6c860::t_4bc8998468b2f7 1-65
+bin/ai-search-doc-events/content-transformers.ts
+  s_36a11364f6c860::t_90398bebcb3345 1-76
+bin/ai-search-doc-events/diff.node.test.ts
+  s_36a11364f6c860::t_ab1607a62ef475 1-74
+bin/ai-search-doc-events/diff.ts
+  s_36a11364f6c860::t_02e50c5871b219 1-147
+bin/ai-search-doc-events/manifest.ts
+  s_36a11364f6c860::t_3af85305082e56 1-115
+bin/ai-search-doc-events/run.ts
+  s_36a11364f6c860::t_76fa7c554f8278 1-76
+bin/ai-search-doc-events/send.ts
+  s_36a11364f6c860::t_5b52588732418a 1-204
+bin/ai-search-doc-events/shared.ts
+  s_36a11364f6c860::t_751b8870126fe5 1-150
+bin/ai-search-doc-events/types.ts
+  s_36a11364f6c860::t_8dde119f234066 1-101
+bin/search-benchmark/.gitignore
+  s_36a11364f6c860::t_5093f619e421e2 1-5
+bin/search-benchmark/README.md
+  s_36a11364f6c860::t_03e6fa2c68aa8b 1-153
+bin/search-benchmark/judge-compute.ts
+  s_36a11364f6c860::t_805fb30900448d 1-257
+bin/search-benchmark/judge-prepare.ts
+  s_36a11364f6c860::t_e67698a2ed1a8b 1-115
+bin/search-benchmark/queries-blog.json
+  s_36a11364f6c860::t_5f2a4c1d8d0549 1-52
+bin/search-benchmark/queries-direct.json
+  s_36a11364f6c860::t_0a5432d3d06ff9 1-82
+bin/search-benchmark/queries.json
+  s_36a11364f6c860::t_86d3866cabc383 1-104
+bin/search-benchmark/run.ts
+  s_36a11364f6c860::t_55672a77de512e 1-830
+src/components/overrides/Header.astro
+  s_36a11364f6c860::t_b1906f9a4efca3 18-48,224,226-243,245-314,320,327-336
+src/util/search.ts
+  s_36a11364f6c860::t_ce4b7857be5323 2-5,7-9
+vendor/ai-search-snippet/LICENSE
+  s_36a11364f6c860::t_9b423c49824d02 1-21
+vendor/ai-search-snippet/lib/main.d.ts
+  s_36a11364f6c860::t_1b5d008ff8018f 1-806
+vendor/ai-search-snippet/lib/search-snippet.es.js
+  s_36a11364f6c860::t_767c6ad1fcacbf 1-4770
+vendor/ai-search-snippet/lib/search-snippet.umd.js
+  s_36a11364f6c860::t_1d3e71bcd00e55 1-2558
+vendor/ai-search-snippet/package.json
+  s_36a11364f6c860::t_3f58f5d9e495d2 1-19
+vitest.config.ts
+  s_36a11364f6c860::t_57bdd4a34ce3db 14-27
+worker/index.ts
+  s_36a11364f6c860::t_c6ac5a478b684e 87-95,106-110,125-129,144-148
+worker/index.worker.test.ts
+  s_36a11364f6c860::t_d09a52be90c0cd 4-5
+worker/worker-configuration.d.ts
+  s_36a11364f6c860::t_831c7a79209f77 6-7
+wrangler.jsonc
+  s_2ab38282234147::t_fe35026a998834 26-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "b8f8587c1dba90bd3c64502a28ab9c0fa6cf3581",
+  "prompts": {},
+  "sessions": {
+    "s_2ab38282234147": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f6a16-a0ab-7195-bd79-81b43305af53",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    },
+    "s_36a11364f6c860": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f6a22-bb7c-7a4e-9a39-79900e270b65",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
