@@ -1,0 +1,31 @@
+bin/ai-search-doc-events/content-processors/mdast.ts
+  s_c6d35e3f6a1ac6::t_035977d2646a9a 53,78,88,94
+bin/ai-search-doc-events/diff.node.test.ts
+  s_194506b1eab3b6::t_e0e8c2f42fe787 2,34-41,43,51-58,84-86,89-112
+bin/ai-search-doc-events/manifest.ts
+  s_c6d35e3f6a1ac6::t_8e50fdb78e488a 51-52,54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "f90cfe15e352ab5ccbea1cc2704e2ccef112a201",
+  "prompts": {},
+  "sessions": {
+    "s_194506b1eab3b6": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f6fff-370f-7e72-b77f-ba6e0bd2e8ef",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    },
+    "s_c6d35e3f6a1ac6": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f70a1-b951-7be5-bc63-e1b7f640d7d8",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
