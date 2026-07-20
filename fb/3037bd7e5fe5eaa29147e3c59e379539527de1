@@ -1,0 +1,90 @@
+.github/workflows/publish-production.yml
+  s_3ad26f351adbab::t_7dc76b54b2231e 6-18,94-106,108-216
+.gitignore
+  s_3ad26f351adbab::t_359a36bfd53e63 14-16
+bin/ai-search-doc-events.ts
+  s_3ad26f351adbab::t_211ef4a5caa1b4 1-3
+bin/ai-search-doc-events/content-processors/changelog-post.ts
+  s_3ad26f351adbab::t_8a1fecd9151f02 1-70
+bin/ai-search-doc-events/content-processors/data.ts
+  s_3ad26f351adbab::t_46615c6169b157 1-47
+bin/ai-search-doc-events/content-processors/generated-landing.ts
+  s_3ad26f351adbab::t_d9b81286881ad0 1-180
+bin/ai-search-doc-events/content-processors/mdast.ts
+  s_3ad26f351adbab::t_5cceb56d09730b 1-114
+bin/ai-search-doc-events/content-processors/model-page.ts
+  s_3ad26f351adbab::t_ea2d541d0f0c5c 1-166
+bin/ai-search-doc-events/content-processors/rendered-html.ts
+  s_3ad26f351adbab::t_648ac34be21a19 1-114
+bin/ai-search-doc-events/content-processors/ruleset-field.ts
+  s_3ad26f351adbab::t_da776a4dbe1157 1-44
+bin/ai-search-doc-events/content-processors/source-markdown.ts
+  s_3ad26f351adbab::t_ee4ecc69ddeaf3 1-14
+bin/ai-search-doc-events/content-processors/third-party-license.ts
+  s_3ad26f351adbab::t_28a517fcc2aff1 1-38
+bin/ai-search-doc-events/content-processors/utils.ts
+  s_3ad26f351adbab::t_d76547d5089b80 1-43
+bin/ai-search-doc-events/content-processors/video.ts
+  s_3ad26f351adbab::t_3f1e46c7cc17c6 1-65
+bin/ai-search-doc-events/content-transformers.ts
+  s_3ad26f351adbab::t_f44e1df7cf0f75 1-76
+bin/ai-search-doc-events/diff.node.test.ts
+  s_3ad26f351adbab::t_1c2313e4513c1f 1-113
+bin/ai-search-doc-events/diff.ts
+  s_3ad26f351adbab::t_856562199c2fad 1-149
+bin/ai-search-doc-events/manifest.ts
+  s_3ad26f351adbab::t_f08e51f4a40af5 1-96
+bin/ai-search-doc-events/run.ts
+  s_3ad26f351adbab::t_f6f9da38c21053 1-78
+bin/ai-search-doc-events/send.ts
+  s_3ad26f351adbab::t_ca5735f7f59a96 1-16,18-189
+bin/ai-search-doc-events/shared.ts
+  s_3ad26f351adbab::t_4b030fa6f421fc 1-140
+bin/ai-search-doc-events/types.ts
+  s_3ad26f351adbab::t_a576ca6b79311f 1-97
+pnpm-lock.yaml
+  s_3ad26f351adbab::t_8070adb9846de9 212-214,266-268,353-358,446-448,852,856,865,932
+  s_3ad26f351adbab::t_0b4a22d092d355 47-49,848-850,7502-7503
+.prettierignore
+  s_3ad26f351adbab::t_f1f2108b34b8bd 19-21
+eslint.config.js
+  s_3ad26f351adbab::t_421826c8659501 41-42
+src/plugins/docsearch/index.ts
+  s_3ad26f351adbab::t_0ddf79952b000b 8-13,29,44
+src/util/search.ts
+  s_3ad26f351adbab::t_201a8448955ee7 2-5,7-9
+vendor/ai-search-snippet/LICENSE
+  s_3ad26f351adbab::t_80917cc1abe8fd 1-21
+vendor/ai-search-snippet/lib/main.d.ts
+  s_3ad26f351adbab::t_f8b23d8d3c4949 1-806
+vendor/ai-search-snippet/lib/search-snippet.es.js
+  s_3ad26f351adbab::t_e34a57e830d813 1-4770
+vendor/ai-search-snippet/lib/search-snippet.umd.js
+  s_3ad26f351adbab::t_b3d534dc1b18f4 1-2558
+vendor/ai-search-snippet/package.json
+  s_3ad26f351adbab::t_719ae7272d76cd 1-19
+worker/index.ts
+  s_3ad26f351adbab::t_777b8040a8b73a 87-90,101-105,120-124,139-143
+worker/index.worker.test.ts
+  s_3ad26f351adbab::t_10e50f66f59e29 4-5
+wrangler.dev.jsonc
+  s_3ad26f351adbab::t_c562057dbe9ffe 1-39
+wrangler.jsonc
+  s_3ad26f351adbab::t_d6d358e0adf42c 26-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "fb3037bd7e5fe5eaa29147e3c59e379539527de1",
+  "prompts": {},
+  "sessions": {
+    "s_3ad26f351adbab": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_07fee62f0ffeQeeQHojmrBPYEh",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
