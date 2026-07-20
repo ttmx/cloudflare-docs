@@ -1,0 +1,45 @@
+.prettierignore
+  s_3ad26f351adbab::t_f1f2108b34b8bd 19-21
+eslint.config.js
+  s_3ad26f351adbab::t_421826c8659501 41-42
+pnpm-lock.yaml
+  s_3ad26f351adbab::t_0b4a22d092d355 47-49,848-850,7502-7503
+src/plugins/docsearch/index.ts
+  s_3ad26f351adbab::t_0ddf79952b000b 8-13,29,44
+src/util/search.ts
+  s_3ad26f351adbab::t_201a8448955ee7 2-5,7-9
+vendor/ai-search-snippet/LICENSE
+  s_3ad26f351adbab::t_80917cc1abe8fd 1-21
+vendor/ai-search-snippet/lib/main.d.ts
+  s_3ad26f351adbab::t_f8b23d8d3c4949 1-806
+vendor/ai-search-snippet/lib/search-snippet.es.js
+  s_3ad26f351adbab::t_e34a57e830d813 1-4770
+vendor/ai-search-snippet/lib/search-snippet.umd.js
+  s_3ad26f351adbab::t_b3d534dc1b18f4 1-2558
+vendor/ai-search-snippet/package.json
+  s_3ad26f351adbab::t_719ae7272d76cd 1-19
+worker/index.ts
+  s_3ad26f351adbab::t_777b8040a8b73a 87-90,101-105,120-124,139-143
+worker/index.worker.test.ts
+  s_3ad26f351adbab::t_10e50f66f59e29 4-5
+wrangler.dev.jsonc
+  s_3ad26f351adbab::t_c562057dbe9ffe 1-39
+wrangler.jsonc
+  s_3ad26f351adbab::t_d6d358e0adf42c 26-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "215dfe1b444ab70c298872b537f9f22ed9fe8cc2",
+  "prompts": {},
+  "sessions": {
+    "s_3ad26f351adbab": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_07fee62f0ffeQeeQHojmrBPYEh",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
