@@ -1,0 +1,21 @@
+pnpm-lock.yaml
+  s_3ad26f351adbab::t_0b4a22d092d355 50-52,856-859,7523-7524
+src/util/search.ts
+  s_3ad26f351adbab::t_201a8448955ee7 2-5,7-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "6de5e222ac9d2f574be8ee8c5e6aa67ccdcc61a1",
+  "prompts": {},
+  "sessions": {
+    "s_3ad26f351adbab": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_07fee62f0ffeQeeQHojmrBPYEh",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
