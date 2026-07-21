@@ -209,6 +209,9 @@ importers:
       globals:
         specifier: 17.6.0
         version: 17.6.0
+      gray-matter:
+        specifier: 4.0.3
+        version: 4.0.3
       happy-dom:
         specifier: 20.10.3
         version: 20.10.3
@@ -260,6 +263,9 @@ importers:
       mdast-util-mdx-expression:
         specifier: 2.0.1
         version: 2.0.1
+      mdast-util-to-string:
+        specifier: 4.0.0
+        version: 4.0.0
       medium-zoom:
         specifier: 1.1.0
         version: 1.1.0
@@ -344,6 +350,12 @@ importers:
       remark-gfm:
         specifier: 4.0.1
         version: 4.0.1
+      remark-mdx:
+        specifier: 3.1.1
+        version: 3.1.1
+      remark-parse:
+        specifier: 11.0.0
+        version: 11.0.0
       remark-stringify:
         specifier: 11.0.0
         version: 11.0.0
@@ -431,6 +443,9 @@ importers:
       wrangler:
         specifier: 4.107.0
         version: 4.107.0(@cloudflare/workers-types@4.20260615.1)
+      yaml:
+        specifier: 2.9.0
+        version: 2.9.0
       zod:
         specifier: 4.4.3
         version: 4.4.3
@@ -849,7 +864,7 @@ packages:
         optional: true
 
   '@cloudflare/vitest-pool-workers@0.16.15':
-    resolution: {integrity: sha512-R0kZhIm4uSxOeTWPHY9xYIFPGRBEHPzl/n9BbHZSY/gk0n16uDU7T1JZe372oTF+diXG1uVBWqiiRc7Hxstdow==}
+    resolution: {integrity: sha512-R0kZhIm4uSxOeTWPHY9xYIFPGRBEHPzl/n9BbHZSY/gk0n16uDU7T1JZe372oTF+diXG1uVBWqiiRc7Hxstdow==, tarball: https://registry.npmjs.org/@cloudflare/vitest-pool-workers/-/vitest-pool-workers-0.16.15.tgz}
     peerDependencies:
       '@vitest/runner': ^4.1.0
       '@vitest/snapshot': ^4.1.0
@@ -916,7 +931,7 @@ packages:
     os: [win32]
 
   '@cloudflare/workers-types@4.20260615.1':
-    resolution: {integrity: sha512-fGOiTwoLj/8bU8mj3VAfa1EULx4ceZhDwnjvY+afDBlSXI9pvY7PE9t62rGEhJjbAOGd7i5WUDun0eZCWBDrzg==}
+    resolution: {integrity: sha512-fGOiTwoLj/8bU8mj3VAfa1EULx4ceZhDwnjvY+afDBlSXI9pvY7PE9t62rGEhJjbAOGd7i5WUDun0eZCWBDrzg==, tarball: https://registry.npmjs.org/@cloudflare/workers-types/-/workers-types-4.20260615.1.tgz}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
