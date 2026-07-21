@@ -1,0 +1,81 @@
+bin/ai-search-doc-events/diff.node.test.ts
+  s_3ad26f351adbab::t_1c2313e4513c1f 1-113
+bin/ai-search-doc-events/run.ts
+  s_3ad26f351adbab::t_f6f9da38c21053 1-78
+bin/ai-search-doc-events/content-processors/mdast.ts
+  s_3ad26f351adbab::t_5cceb56d09730b 1-114
+  s_3ad26f351adbab::t_c885372ff0dc87 115-116
+bin/ai-search-doc-events/content-processors/source-markdown.ts
+  s_3ad26f351adbab::t_ee4ecc69ddeaf3 1-14
+bin/ai-search-doc-events/content-processors/third-party-license.ts
+  s_3ad26f351adbab::t_28a517fcc2aff1 1-38
+bin/ai-search-doc-events/content-processors/model-page.ts
+  s_3ad26f351adbab::t_ea2d541d0f0c5c 1-166
+bin/ai-search-doc-events/diff.ts
+  s_3ad26f351adbab::t_856562199c2fad 1-149
+bin/ai-search-doc-events/content-processors/ruleset-field.ts
+  s_3ad26f351adbab::t_da776a4dbe1157 1-44
+bin/ai-search-doc-events/content-processors/utils.ts
+  s_3ad26f351adbab::t_d76547d5089b80 1-43
+bin/ai-search-doc-events/content-processors/generated-landing.ts
+  s_3ad26f351adbab::t_d9b81286881ad0 1-126,128-149,150-152,153-164
+bin/ai-search-doc-events/types.ts
+  s_3ad26f351adbab::t_a576ca6b79311f 1-97
+bin/ai-search-doc-events/content-processors/video.ts
+  s_3ad26f351adbab::t_3f1e46c7cc17c6 1-65
+.gitignore
+  s_3ad26f351adbab::t_359a36bfd53e63 14-16
+bin/ai-search-doc-events/content-processors/data.ts
+  s_3ad26f351adbab::t_46615c6169b157 1-47
+bin/ai-search-doc-events.ts
+  s_3ad26f351adbab::t_211ef4a5caa1b4 1-3
+bin/ai-search-doc-events/content-processors/rendered-html.ts
+  s_3ad26f351adbab::t_648ac34be21a19 1-114
+bin/ai-search-doc-events/content-processors/changelog-post.ts
+  s_3ad26f351adbab::t_8a1fecd9151f02 1-68
+bin/ai-search-doc-events/send.ts
+  s_3ad26f351adbab::t_ca5735f7f59a96 1-189
+bin/ai-search-doc-events/content-transformers.ts
+  s_3ad26f351adbab::t_f44e1df7cf0f75 1-40,41-75
+.github/workflows/publish-production.yml
+  s_3ad26f351adbab::t_7dc76b54b2231e 6-18,96-222
+  s_3ad26f351adbab::t_7e00fd42b7fce6 223
+  s_3ad26f351adbab::t_dfe3a3126b1f69 67
+pnpm-lock.yaml
+  s_3ad26f351adbab::t_8070adb9846de9 215-217,269-271,356-361,449-451,861,865,874,941
+  s_3ad26f351adbab::t_0b4a22d092d355 50-52,856-859,7523-7524
+bin/ai-search-doc-events/shared.ts
+  s_3ad26f351adbab::t_4b030fa6f421fc 1-140
+bin/ai-search-doc-events/manifest.ts
+  s_3ad26f351adbab::t_f08e51f4a40af5 1-96
+package.json
+  s_3ad26f351adbab::t_f1131561c10459 56
+src/util/search.ts
+  s_3ad26f351adbab::t_201a8448955ee7 8
+src/components/overrides/Header.astro
+  s_6e03c4c85074d5::t_daf15a81c969f4 195,205
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "bd9441398ae0efc15a4f6c81b752445966775f10",
+  "prompts": {},
+  "sessions": {
+    "s_3ad26f351adbab": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_07fee62f0ffeQeeQHojmrBPYEh",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    },
+    "s_6e03c4c85074d5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_07be8d93affeheqnUZekBjATxf",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
