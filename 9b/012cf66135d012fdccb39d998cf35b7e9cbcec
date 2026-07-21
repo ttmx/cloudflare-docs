@@ -1,0 +1,26 @@
+pnpm-lock.yaml
+  s_3ad26f351adbab::t_0b4a22d092d355 50-52,856-859,7523-7524
+src/util/search.ts
+  s_3ad26f351adbab::t_201a8448955ee7 7-12
+  s_3ad26f351adbab::t_7991c88315b08b 4-6
+package.json
+  s_3ad26f351adbab::t_f1131561c10459 56
+.github/workflows/publish-production.yml
+  s_3ad26f351adbab::t_dfe3a3126b1f69 67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "9b012cf66135d012fdccb39d998cf35b7e9cbcec",
+  "prompts": {},
+  "sessions": {
+    "s_3ad26f351adbab": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_07fee62f0ffeQeeQHojmrBPYEh",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
