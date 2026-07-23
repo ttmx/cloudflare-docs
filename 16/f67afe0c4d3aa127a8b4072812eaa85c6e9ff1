@@ -1,0 +1,19 @@
+.github/workflows/publish-production.yml
+  s_3ad26f351adbab::t_7dc76b54b2231e 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "16f67afe0c4d3aa127a8b4072812eaa85c6e9ff1",
+  "prompts": {},
+  "sessions": {
+    "s_3ad26f351adbab": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_07fee62f0ffeQeeQHojmrBPYEh",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
