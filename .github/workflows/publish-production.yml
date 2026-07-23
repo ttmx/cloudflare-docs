@@ -11,6 +11,58 @@ on:
         default: false
 
 jobs:
+  dev-reindex-test:
+    name: Dev AI Search full reindex test
+    if: github.repository == 'ttmx/cloudflare-docs' && github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+      - name: Set up pnpm
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v5
+        with:
+          version: 11
+      - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6
+        id: setup-node
+        with:
+          node-version: 24.x
+          cache: pnpm
+      - name: Restore node_modules (cache hit)
+        id: node-modules-cache
+        uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-node-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('package.json') }}
+      - name: Install node_modules (cache miss)
+        run: pnpm install --frozen-lockfile
+        if: steps.node-modules-cache.outputs.cache-hit != 'true'
+      - name: Restore Astro assets from cache
+        uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5
+        with:
+          path: .astro-cache/assets
+          key: astro-assets-${{ hashFiles('src/assets/**') }}
+          restore-keys: astro-assets-
+      - name: Build
+        run: pnpm run build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Reindex dev AI Search
+        env:
+          CF_ACCESS_CLIENT_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
+          CF_ACCESS_CLIENT_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
+          REINDEX_URL: ${{ vars.AI_SEARCH_DEV_REINDEX_URL }}
+        run: |
+          : "${REINDEX_URL:?AI_SEARCH_DEV_REINDEX_URL repository variable is required}"
+          : "${CF_ACCESS_CLIENT_ID:?CF_ACCESS_CLIENT_ID secret is required}"
+          : "${CF_ACCESS_CLIENT_SECRET:?CF_ACCESS_CLIENT_SECRET secret is required}"
+
+          pnpm exec tsx bin/ai-search-doc-events.ts \
+            --manifest .ai-search/dev-page-hashes.json \
+            --batch-size 25 \
+            --send-url "$REINDEX_URL" \
+            --force-full-reindex
+
   publish:
     if: github.repository == 'cloudflare/cloudflare-docs' && github.ref == 'refs/heads/production'
     name: Production
