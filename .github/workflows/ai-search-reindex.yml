@@ -28,7 +28,8 @@ jobs:
   reindex:
     name: AI Search reindex
     if: >-
-      github.repository == 'cloudflare/cloudflare-docs' &&
+      (github.repository == 'cloudflare/cloudflare-docs' ||
+      github.repository == 'ttmx/cloudflare-docs') &&
       (github.event_name == 'workflow_dispatch' ||
       github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-22.04
@@ -104,7 +105,7 @@ jobs:
               break
             fi
           done
-          if [ "$restored" != "true" ] && [ "${{ inputs.force_full_reindex }}" != "true" ]; then
+          if [ "$restored" != "true" ] && [ "${{ inputs.force_full_reindex }}" != "true" ] && [ "${{ github.repository }}" != "ttmx/cloudflare-docs" ]; then
             echo "No previous manifest artifact. Refusing to advance an empty baseline." >&2
             echo "Restore a prior manifest or manually run against a known-empty/reset instance with force_full_reindex=true." >&2
             exit 1
@@ -117,14 +118,14 @@ jobs:
           CF_ACCESS_CLIENT_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
           CF_ACCESS_CLIENT_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
           # Absolute URL of the indexer worker's reindex endpoint.
-          REINDEX_URL: ${{ vars.AI_SEARCH_REINDEX_URL }}
+          REINDEX_URL: ${{ github.repository == 'ttmx/cloudflare-docs' && vars.AI_SEARCH_DEV_REINDEX_URL || vars.AI_SEARCH_REINDEX_URL }}
         run: |
           : "${REINDEX_URL:?AI_SEARCH_REINDEX_URL repository variable is required}"
           : "${CF_ACCESS_CLIENT_ID:?CF_ACCESS_CLIENT_ID secret is required}"
           : "${CF_ACCESS_CLIENT_SECRET:?CF_ACCESS_CLIENT_SECRET secret is required}"
 
           EXTRA=""
-          if [ "${{ inputs.force_full_reindex }}" = "true" ]; then
+          if [ "${{ inputs.force_full_reindex }}" = "true" ] || [ "${{ github.repository }}" = "ttmx/cloudflare-docs" ]; then
             EXTRA="--force-full-reindex"
           fi
           pnpm exec tsx bin/ai-search-doc-events.ts \
@@ -143,7 +144,7 @@ jobs:
           overwrite: true
 
       - name: Notify Google Chat on failure
-        if: failure()
+        if: failure() && github.repository == 'cloudflare/cloudflare-docs'
         env:
           WEBHOOK_URL: ${{ secrets.CED_TEAM_ALERTS_CHANNEL_WEBHOOK }}
           ACTOR: ${{ github.actor }}

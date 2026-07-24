@@ -6,7 +6,7 @@ on:
 
 jobs:
   publish:
-    if: github.repository == 'cloudflare/cloudflare-docs'
+    if: github.repository == 'cloudflare/cloudflare-docs' || github.repository == 'ttmx/cloudflare-docs'
     name: Production
     runs-on: ubuntu-22.04
     permissions:
@@ -59,12 +59,13 @@ jobs:
           path: dist
 
       - name: Deploy to Cloudflare Workers
+        if: github.repository == 'cloudflare/cloudflare-docs'
         run: pnpm exec wrangler deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
       - name: Notify Google Chat on failure
-        if: failure()
+        if: failure() && github.repository == 'cloudflare/cloudflare-docs'
         env:
           WEBHOOK_URL: ${{ secrets.CED_TEAM_ALERTS_CHANNEL_WEBHOOK }}
           ACTOR: ${{ github.actor }}
