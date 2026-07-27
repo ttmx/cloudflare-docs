@@ -1,0 +1,21 @@
+.github/workflows/ai-search-reindex.yml
+  s_545774c619aac3::t_e3704a1c113627 1-142
+.github/workflows/publish-production.yml
+  s_545774c619aac3::t_ea2a99f516c918 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "4cad63c410c6abed228ed5278054d177ff485830",
+  "prompts": {},
+  "sessions": {
+    "s_545774c619aac3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_06c892f89ffeR7b3euZRAC7jsr",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}

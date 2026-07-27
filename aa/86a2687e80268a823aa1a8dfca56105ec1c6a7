@@ -1,0 +1,19 @@
+bin/ai-search-doc-events/content-transformers.node.test.ts
+  s_b293598d94b78e::t_eaf67f17bbb480 39-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "aa86a2687e80268a823aa1a8dfca56105ec1c6a7",
+  "prompts": {},
+  "sessions": {
+    "s_b293598d94b78e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_06b51bef4ffeh7nNbAcbcZEWUq",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
