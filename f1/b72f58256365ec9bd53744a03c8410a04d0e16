@@ -1,0 +1,21 @@
+bin/ai-search-doc-events/send.node.test.ts
+  s_596716f989c843::t_2e625513addbdc 1-36
+bin/ai-search-doc-events/send.ts
+  s_596716f989c843::t_7fb0f8dcebad95 86-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "f1b72f58256365ec9bd53744a03c8410a04d0e16",
+  "prompts": {},
+  "sessions": {
+    "s_596716f989c843": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_05cc83d38ffe7GEWAA922eX44X",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
