@@ -1,0 +1,19 @@
+.github/workflows/ai-search-reindex.yml
+  s_3a8c48a53e5602::t_71e494e258a70d 14-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "7460abbbd93ac1110ba94421b0999534ad262ac1",
+  "prompts": {},
+  "sessions": {
+    "s_3a8c48a53e5602": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_05739d45affehIHLJGT7gAK2HH",
+        "model": "claude-opus-5"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
