@@ -1,0 +1,22 @@
+name: Cleanup R2 snapshot test
+
+on:
+  push:
+    branches: [r2-upload-test]
+
+jobs:
+  cleanup:
+    if: github.repository == 'ttmx/cloudflare-docs'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Delete test snapshot
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_SNAPSHOT_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SNAPSHOT_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          R2_ACCOUNT_ID: ${{ vars.R2_SNAPSHOT_ACCOUNT_ID }}
+          R2_BUCKET: ${{ vars.R2_SNAPSHOT_BUCKET }}
+        run: |
+          aws s3 rm "s3://$R2_BUCKET/2026-07-29T11-42-21Z" \
+            --recursive \
+            --endpoint-url "https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com"
