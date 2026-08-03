@@ -1,0 +1,49 @@
+src/components/Header.astro
+  s_32e538d2c8162d::t_938e30430fb471 54-62
+package.json
+  s_38402f124fb782::t_a0974945f4f7ac 53
+astro.config.ts
+  s_b5e998398ae3ad::t_ffea571b39ae44 87
+pnpm-lock.yaml
+  s_b5e998398ae3ad::t_b2fd6badd8202b 41-43,778-781,6590-6591
+pnpm-workspace.yaml
+  s_b5e998398ae3ad::t_98905e57e0cf2d 5,7
+src/components/ui/search/DocSearch.astro
+  s_b5e998398ae3ad::t_83e90af8662df9 2-3,7-12,31-34,36-43,50,71,77,82,86,93,99,107,125-168,176,181,185,193-194,197-206,208-216,219-221
+src/scripts/analytics/docsearch.ts
+  s_b5e998398ae3ad::t_adc9b9eb958b69 3,5-6,8-10,12,14
+src/util/search.ts
+  s_b5e998398ae3ad::t_d3b8be302e17df 1,3-12,14-24,26-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "f0ca06ebd7c729f30a151bdc4002ff91281f7c9c",
+  "prompts": {},
+  "sessions": {
+    "s_32e538d2c8162d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_04a8178d0ffeHmjYYPt6Wh4V38",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    },
+    "s_38402f124fb782": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0484c99d8ffe6IUq2BEWJEEcrE",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    },
+    "s_b5e998398ae3ad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_046974a41ffekkoXQtgbGngvhF",
+        "model": "claude-opus-5"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
