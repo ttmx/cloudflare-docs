@@ -1,0 +1,19 @@
+src/components/ui/search/Search.astro
+  s_32e538d2c8162d::t_8590147b543be5 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "8e7d34390d24ebfd480cbc136555ec37c05ed0b1",
+  "prompts": {},
+  "sessions": {
+    "s_32e538d2c8162d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_04a8178d0ffeHmjYYPt6Wh4V38",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
