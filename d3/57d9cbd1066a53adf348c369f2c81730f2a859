@@ -1,0 +1,32 @@
+package.json
+  s_38402f124fb782::t_a0974945f4f7ac 53
+src/components/Header.astro
+  s_32e538d2c8162d::t_938e30430fb471 54-62
+src/components/ui/search/Search.astro
+  s_32e538d2c8162d::t_8590147b543be5 3
+  s_32e538d2c8162d::t_ad39dc3e4ee9ca 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "d357d9cbd1066a53adf348c369f2c81730f2a859",
+  "prompts": {},
+  "sessions": {
+    "s_32e538d2c8162d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_04a8178d0ffeHmjYYPt6Wh4V38",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    },
+    "s_38402f124fb782": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0484c99d8ffe6IUq2BEWJEEcrE",
+        "model": "gpt-5.6"
+      },
+      "human_author": "ttmx <git@tteles.dev>"
+    }
+  }
+}
